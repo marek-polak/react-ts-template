@@ -71,7 +71,7 @@
     }
   },
   "lint-staged": {
-    "*.{ts,tsx,json}": [
+    "*.{js,jsx,ts,tsx,json,css,scss,md}": [
       "eslint --fix --quiet",
       "prettier --write",
       "git add"
