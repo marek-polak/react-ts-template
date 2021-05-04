@@ -1,12 +1,15 @@
-import React from 'react';
+import React, { Suspense } from "react";
+import { useTranslation } from "react-i18next";
 import logo from './logo.svg';
 import './App.scss';
 
-function App() {
+function AppView() {
+  const { t } = useTranslation();
   return (
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
+        <h1>{t("page.title")}</h1>
         <p>
           Edit <code>src/App.tsx</code> and save to reload.
         </p>
@@ -23,4 +26,10 @@ function App() {
   );
 }
 
-export default App;
+export default function App() {
+  return (
+    <Suspense fallback={<div>loading...</div>}>
+      <AppView />
+    </Suspense>
+  );
+}
