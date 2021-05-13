@@ -14,6 +14,7 @@ yarn add -D gh-pages husky lint-staged prettier cross-env
 
 # basic use-full libs:
 yarn add axios classnames date-fns immutability-helper react-router react-router-dom unstated-next
+yarn add -D @types/react-router-dom
 
 # internalisation lib 
 yarn add react-i18
