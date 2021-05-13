@@ -13,7 +13,7 @@ cd react-ts-template
 yarn add -D gh-pages husky lint-staged prettier cross-env
 
 # basic use-full libs:
-yarn add axios classnames date-fns immutability-helper react-router unstated-next
+yarn add axios classnames date-fns immutability-helper react-router react-router-dom unstated-next
 
 # internalisation lib 
 yarn add react-i18
